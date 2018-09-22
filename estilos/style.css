@@ -1,0 +1,507 @@
+body{
+    margin: 0%;
+    padding: 40px 40px 0 40px;
+    background-image: linear-gradient(to right, rgb(190, 188, 188), white);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* -------------------------------------ESTRELLAS---------------------------------------------------------------- */
+
+x-star-rating {
+    font-family: 'Ionicons';
+    font-size: 25px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+x-star-rating > .star::after {
+    content: '\2606';
+    color: #777;
+}
+
+x-star-rating > .star.full::after {
+    content: '\2605';
+    color: #fd0;
+}
+
+
+/* -------------------------------------------PC----------------------------------------------------------------- */
+
+
+.banner{
+    height: 600px;
+    width: 100%;
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    border-radius: 30px 30px 0 0;
+}
+h1.titulo{
+    font-size: 70px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 300px;
+    margin-top: 225px;
+    justify-content: center;
+}
+p{
+    color:black;
+    margin-top: 10px;
+    text-align: justify;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 24px;
+    width: 75%;
+}
+.band1{
+    background-image: url(./images/logo1.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band2{
+    background-image: url(./images/logo2.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band3{
+    background-image: url(./images/logo3.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band4{
+    background-image: url(./images/logo4.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band5{
+    background-image: url(./images/logo5.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band6{
+    background-image: url(./images/logo6.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band7{
+    background-image: url(./images/logo7.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band8{
+    background-image: url(./images/logo8.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band9{
+    background-image: url(./images/logo9.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band10{
+    background-image: url(./images/logo10.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band11{
+    background-image: url(./images/logo11.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band12{
+    background-image: url(./images/logo12.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band13{
+    background-image: url(./images/logo13.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band14{
+    background-image: url(./images/logo14.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.band15{
+    background-image: url(./images/logo15.jpg);
+    width: 600px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+td a{
+    margin: 30px 0px;
+    text-decoration: none;
+    color: rgb(75, 146, 163);
+}
+.citas{
+    color:gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    width: 70%;
+}
+.table{
+    width: 90%;
+    background-color: white;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table td,
+.table th{
+     padding: 1em; 
+     text-align: left; 
+
+}
+.table tr:nth-child(even){
+    background-color: rgb(204, 203, 203);
+}
+.sec1{
+    position: static;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    width: 90vw;
+    margin-right: 0;
+}
+thead{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(224, 224, 224);
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.subtitulo{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.titulo{
+    display: flex;
+}
+.numbers{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 50px;
+    color: white;
+}
+
+.busqueda{
+    width: 70vw;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.busqueda h3{
+    margin-top: 60px;
+}
+
+.busqueda h3 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    transition: .5s;
+}
+
+
+/* -------------------------------------HOVER`S---------------------------------------------------------------- */
+
+
+@media(min-width:800px){
+
+    .footer a:hover{
+        color: white;
+        transition: .3s;
+        
+    }
+    .spotif:hover{
+        color:#81b71a;
+        transition: .5s;
+        border: 1px solid #81b71a;
+    }
+    .btnvolver:hover{
+        color: white;
+        transition: .5s;
+    }
+
+    tr:hover td {
+        background-color: rgb(46, 46, 46);
+        color: white;
+        transition: .7s;
+    }
+    td a:hover{
+        text-decoration: underline;
+        color: white;
+        transition: .5s;
+    }
+}
+
+/* -------------------------------------TABLET---------------------------------------------------------------- */
+
+@media(max-width:800px){
+
+    table{
+        /* pointer-events: none; */
+        width: 80vw;
+    }
+    .ref{
+        cursor: pointer;
+    }
+    .sec1{
+        width: 80vw;
+    }
+    table, tr, td{
+        display: block;
+    }
+
+    th{
+        display: none;
+    }
+    table{
+        padding-right: 0;
+    }
+     
+
+    td:first-child {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 120px;
+        font-size: 30px;
+    }
+    tr { 
+        margin: 0px; 
+        position: relative; 
+        padding: 0;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        width: 72vw;
+        margin-right: 0;
+    }
+    tbody{
+        width: 80vw;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    thead{
+        display: none;
+    }
+
+    td:not(:first-child) {
+        clear: both;
+        margin-left: 80px;
+        padding: 0px 0px 0px 200px;
+        position: relative;
+        text-align: left; 
+        height: 30px;
+    }
+     
+    td:not(:first-child):before {
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+    }
+
+
+    td:nth-child(2):before { content: 'Nombre:'; }
+    td:nth-child(3):before { content: 'Genero:'; }
+    td:nth-child(4):before { content: 'Periodo de actividad:'; }
+    td:nth-child(5):before { content: 'Discografía:';}
+    td:nth-child(6):before { content: 'Puntuación:';}
+    td:nth-child(7):before { content: 'Detalles:';}
+
+
+}
+
+/* -------------------------------------CELULAR---------------------------------------------------------------- */
+
+@media screen and (max-width: 570px) {
+
+    .table{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+        /* pointer-events: none; */
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .section2{
+        width: 320px;
+    }
+    .banner, header, .sec1, .add{
+        width: 320px;
+    }
+    /* .add{
+        width: 295px;
+
+    } */
+    .numbers, .subtitulo{
+        font-size: 20px;
+    }
+    .sec1{
+        width: 320px;
+    }
+    header{
+        width: 320px;
+    }
+
+    h1.titulo{
+        font-size: 72.3px;
+        width: 270px;
+        margin-left: 8px;
+        padding: 0 0 0 15px;
+    }
+    .band1, .band2, .band3, .band4, .band5, .band6, .band7, .band8, .band9, .band10, .band11, .band12, .band13, .band14, .band15{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 300px;
+    }
+    body{
+        padding:0;
+        margin: 0;
+    }
+    .sec1{
+        margin: 0;
+    }
+    tr{
+        width: 100vw;
+    }
+    tbody{
+        width: 320px;
+    }
+    thead{
+        display: none;
+    }
+    td:first-child{
+        text-align: center;
+        font-size: 50px;
+    }
+         
+    td:first-child,
+    td:not(:first-child) {
+        padding: 0px;
+        width: 100%;
+    }
+         
+    td:first-child {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    td:not(:first-child) { 
+        margin: 0; 
+        margin-right: auto;
+        margin-left: auto;
+        padding: 12px;
+        width: 72vw;
+
+    }
+    td:not(:first-child):before {
+        display: block;
+        font-size: .8em;
+        padding-top: 0.3em;
+        position: relative;
+    }
+       
+    td:last-child { padding-bottom: 1rem; }
+         
+    tr {
+        margin: 30px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+    .banner{
+        width: 100%;
+    }
+}

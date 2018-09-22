@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2 animated slideInRight">
+        <div class="titulo">
+            <h2 class="numbers">10º</h2>
+
+            <h2 class="subtitulo">Zeds Dead</h2>
+
+        </div>
+
+        <div class="band10 zoomInUp">
+        </div>
+
+        <p>Zeds Dead es un dúo canadiense de música electrónica de Toronto , Canadá . Dylan Mamid, también conocido como DC, y Zachary Rapp-Rovan, también conocidos como Hooks, se destacaron al lanzar música original y remixes desde 2009-10 antes de convertirse en un elemento básico en el circuito internacional de gira a partir de entonces. Hoy en día, son conocidos por su exploración de una gran variedad de géneros que combinan aspectos de garaje , casa , electro house , hip-hop , glitch , drum and bass , y más. </p>
+
+        <div class="citas">
+            <cite> 
+                We're the living dead,
+                With our blood-shot eyes and our hearts of stone.
+                We all that's left and we won't need rest for we won't go home.
+                We on our feet, where the beasts and the ghouls, and the demons sleep.
+                Put it on repeat, keep the music going that's all we need.
+                We don't feel no pain, we just kill the night and we work all day.
+                We all are stars, commands you all Kurt Cobain. 
+                I never did it for the fame, I just did it cause I love it and I'm hard to change.
+                You can fool yourself, let the monsters know,
+                When the lights out and you all alone like...
+                - The Living Dead, zeds Dead 
+                    
+            </cite>
+        </div>
+    
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/67qogtRNI0GjUr8PlaG6Zh?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    
+    </div>
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+
+    <script>
+        let btnvolvers = document.querySelectorAll(".btnvolver")
+        let section2 = document.querySelector(".section2")
+    
+        btnvolvers.forEach(function(btnvolver){
+            btnvolver.addEventListener('click',function(ev){
+                ev.preventDefault();
+                section2.classList.remove("animated");
+                section2.classList.remove("slideInRight");
+                section2.classList.add("animated");
+                section2.classList.add("slideOutRight")
+                setTimeout(() => {
+                    location.href="../index.html";
+                }, 500);
+    
+            });
+        })
+    
+    </script>
+
+    
+</body>
+
+</html>

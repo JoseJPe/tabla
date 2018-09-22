@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+    <div class="section2 animated slideInRight">
+        <div class="titulo  ">
+            <h2 class="numbers">1º</h2>
+
+            <h2 class="subtitulo">The Devil Wears Prada</h2>
+
+        </div>
+
+        <div class="band1 animated zoomInUp">
+        </div>
+
+        <p>The Devil Wears Prada (abreviado como TDWP) es una banda de metalcore de Dayton, Estados Unidos. Están firmados actualmente en Rise Records y son clasificados en PureVolume y Myspace como una banda de metalcore cristiano. Tomaron el nombre de la novela y película. La banda fue formada antes de salir la película del mismo nombre. Aunque la inspiración de la banda para su nombre era del libro, pero no el motivo. Según lo dicho por el vocalista Mike Hranica en el blog de la banda.</p>
+
+
+        <div class="citas">
+            <cite> "Es el mismo concepto que hay en nuestras letras "agua que no has de beber dejala correr" y muchos otros. Lo que queremos decir es que algún día todos nos daremos cuenta de que esto es verdad. Cuando estemos ante Dios, él no va a tener en cuenta quien viste Prada o zapatos Gucci o cualquier otra cosa. Hay un razonamiento cristiano en el nombre, no intentamos estar a la moda ni nada así" </cite>
+        </div>
+    
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/0NbQe5CNgh4YApOCDuHSjb?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    </div>
+    <script>
+    let btnvolvers = document.querySelectorAll(".btnvolver")
+    let section2 = document.querySelector(".section2")
+
+    btnvolvers.forEach(function(btnvolver){
+        btnvolver.addEventListener('click',function(ev){
+            ev.preventDefault();
+            section2.classList.remove("animated");
+            section2.classList.remove("slideInRight");
+            section2.classList.add("animated");
+            section2.classList.add("slideOutRight")
+            setTimeout(() => {
+                location.href="../index.html";
+            }, 500);
+
+        });
+    })
+
+    </script>
+
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+    
+</body>
+
+</html>

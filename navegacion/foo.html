@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2 animated slideInRight">
+        <div class="titulot">
+            <h2 class="numbers">12º</h2>
+
+            <h2 class="subtitulo">Foo Fighters</h2>
+
+        </div>
+
+        <div class="band12 zoomInUp">
+        </div>
+
+        <p>Foo Fighters es una banda estadounidense de rock formada en la ciudad de Seattle en 1994 por Dave Grohl, exbaterista de Nirvana y Scream.
+
+        El grupo debe su nombre a los ovnis y los diversos fenómenos aéreos que fueron reportados por los pilotos de los aviones aliados en la Segunda Guerra Mundial, que se conocen colectivamente como Foo Fighters. Antes del lanzamiento de su álbum debut en 1995, Grohl, como único miembro oficial, reclutó al bajista Nate Mendel y el baterista William Goldsmith, ambos anteriormente miembros de Sunny Day Real Estate, así como su compañero en las giras de Nirvana, Pat Smear como guitarrista para completar la alineación. </p>
+
+
+        <div class="citas">
+            <cite> 
+                "it`s times like these you learn to live again" - times like these, foo fighters
+            </cite>
+        </div>
+    
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    </div>
+    <script>
+        let btnvolvers = document.querySelectorAll(".btnvolver")
+        let section2 = document.querySelector(".section2")
+    
+        btnvolvers.forEach(function(btnvolver){
+            btnvolver.addEventListener('click',function(ev){
+                ev.preventDefault();
+                section2.classList.remove("animated");
+                section2.classList.remove("slideInRight");
+                section2.classList.add("animated");
+                section2.classList.add("slideOutRight")
+                setTimeout(() => {
+                    location.href="../index.html";
+                }, 500);
+    
+            });
+        })
+    
+    </script>
+
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+    
+</body>
+
+</html>

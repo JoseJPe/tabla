@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2 animated slideInRight">
+        <div class="titulo">
+            <h2 class="numbers">5º</h2>
+
+            <h2 class="subtitulo">Jay Z</h2>
+
+        </div>
+
+        <div class="band8zoomInUp">
+        </div>
+
+        <p>Shawn Corey Carter (Brooklyn, Nueva York, Estados Unidos, 4 de diciembre de 1969), más conocido por su nombre artístico Jay Z (estilizado a JAY Z) es un rapero, productor, empresario y, ocasionalmente, actor estadounidense. Es uno de los artistas de hip-hop más exitosos económicamente en Estados Unidos y mundialmente, poseyendo un patrimonio neto de más de $500 millones en 2012. Ha vendido aproximadamente 75 millones de álbumes en todo el mundo, y ha recibido diecinueve premios Grammy por su trabajo musical, así como numerosas nominaciones adicionales. Es considerado como uno de los mejores raperos de todos los tiempos. Clasificó como número uno de la controvertida lista de The Greatest MCs of All-Time elaborada por la cadena de televisión MTV en 2006. Tres de sus álbumes, Reasonable Doubt (1996), The Blueprint (2001) y The Black Album (2003), se consideran hitos en el género y los tres clasifican en la lista de los 500 mejores álbumes de todos los tiempos de la revista Rolling Stone. </p>
+
+       
+        <div class="citas">
+            <cite> 
+                “We change people through conversation, not through censorship.” -Jay Z 
+            </cite>
+        </div>
+    
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    </div>
+    <script>
+        let btnvolvers = document.querySelectorAll(".btnvolver")
+        let section2 = document.querySelector(".section2")
+    
+        btnvolvers.forEach(function(btnvolver){
+            btnvolver.addEventListener('click',function(ev){
+                ev.preventDefault();
+                section2.classList.remove("animated");
+                section2.classList.remove("slideInRight");
+                section2.classList.add("animated");
+                section2.classList.add("slideOutRight")
+                setTimeout(() => {
+                    location.href="../index.html";
+                }, 500);
+    
+            });
+        })
+    
+    </script>
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+    
+</body>
+
+</html>

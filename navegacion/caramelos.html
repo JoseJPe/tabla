@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2 animated slideInRight">
+        <div class="titulo">
+            <h2 class="numbers">15º</h2>
+
+            <h2 class="subtitulo">Caramelos de cianuro</h2>
+
+        </div>
+
+        <div class="band15 zoomInUp">
+        </div>
+
+        <p>Caramelos de cianuro es una banda venezolana de rock originaria de Caracas. También es conocida a nivel nacional como CDC, o simplemente como Caramelos. Fue fundada en 1991 por Asier Cazalis (vocalista y bajista), Luis Golding (guitarrista), Miguel Ángel González (guitarrista) y Pablo Martínez (baterista). Luis Golding (que estaba en calidad de guitarrista junto a Miguel González) dejó la banda antes de la grabación de su álbum Harakiri City, por lo que la banda paso a ser un trío hasta que el vocalista Asier Cazalis (que también tocaba el bajo) decidió dedicarse sólo al canto, por lo que Luis Golding (cuyo nombre de pila es Luís Barrios) regresó a la banda en calidad de bajista.</p>
+
+        <div class="citas">
+            <cite> 
+                "Todos somos Viajeros,
+                Nuestras Obras Son Huellas en La Carretera"
+                
+                - Fragmento del libro "LA CARRETERA"
+            </cite>
+        </div>
+    
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/34OLInsXImlQpjzmQw9Wd3?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    </div>
+    
+    <script>
+        let btnvolvers = document.querySelectorAll(".btnvolver")
+        let section2 = document.querySelector(".section2")
+    
+        btnvolvers.forEach(function(btnvolver){
+            btnvolver.addEventListener('click',function(ev){
+                ev.preventDefault();
+                section2.classList.remove("animated");
+                section2.classList.remove("slideInRight");
+                section2.classList.add("animated");
+                section2.classList.add("slideOutRight")
+                setTimeout(() => {
+                    location.href="../index.html";
+                }, 500);
+    
+            });
+        })
+    
+    </script>
+
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+    
+</body>
+
+</html>

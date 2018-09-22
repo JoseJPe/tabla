@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2 animated slideInRight">
+        <div class="titulo">
+            <h2 class="numbers">6º</h2>
+
+            <h2 class="subtitulo">Eminem</h2>
+
+        </div>
+
+        <div class="band6 zoomInUp">
+        </div>
+
+            <p>Marshall Bruce Mathers III (17 de octubre de 1972, St Joseph, Misuri), conocido por su nombre artístico Eminem (estilizado como EMINƎM) y también por su álter ego Slim Shady, es un rapero, productor discográfico y actor estadounidense. Su nombre artístico proviene de la unión de las iniciales de Marshall Mathers: M&M («Em and Em», estilizándose como Eminem).
+
+            Se hizo popular en 1999 con su álbum de estudio The Slim Shady LP, que ganó un premio Grammy por Mejor Álbum de rap. Su siguiente álbum, The Marshall Mathers LP, se convirtió en el álbum de hip hop más vendido de la historia. Eminem ganó mayor popularidad, destacando su propio sello discográfico Shady Records, y llevó a su grupo D12 a un reconocimiento general. </p>
+
+
+        <div class="citas">
+            <cite> 
+                But I've heard people say they heard the tape and it ain't that bad.
+                But it was I singled out a whole race and for that apologize.
+                I was wrong cuz no matter what color a girl is: she’s still a hoe. -Eminem
+            </cite>
+        </div>
+    
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    </div>
+    
+    <script>
+        let btnvolvers = document.querySelectorAll(".btnvolver")
+        let section2 = document.querySelector(".section2")
+    
+        btnvolvers.forEach(function(btnvolver){
+            btnvolver.addEventListener('click',function(ev){
+                ev.preventDefault();
+                section2.classList.remove("animated");
+                section2.classList.remove("slideInRight");
+                section2.classList.add("animated");
+                section2.classList.add("slideOutRight")
+                setTimeout(() => {
+                    location.href="../index.html";
+                }, 500);
+    
+            });
+        })
+    
+    </script>
+
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+    
+</body>
+
+</html>

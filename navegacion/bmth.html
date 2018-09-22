@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicTab</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <div class="add">
+                <h1 class="titulo animated slideInRight">MusicTab</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2 animated slideInRight">
+        <div class="titulo">
+            <h2 class="numbers">13º</h2>
+
+            <h2 class="subtitulo">Bring me the horizon</h2>
+
+        </div>
+
+        <div class="band13 zoomInUp">
+        </div>
+
+        <p>Bring Me the Horizon es una banda británica de metalcore de Sheffield, Inglaterra. Se formó en 2003 y actualmente está conformada por el vocalista Oliver Sykes, el guitarrista Lee Malia, el bajista Matt Kean, el baterista Matt Nicholls y el tecladista Jordan Fish. Están firmados por RCA Records a nivel mundial y por Columbia Records para Estados Unidos exclusivamente. El estilo musical de sus inicios así como el de su álbum debut Count Your Blessings era el deathcore, pero en sus siguientes discos adoptaron un estilo más ecléctico del metalcore. Sin embargo, su último álbum That's The Spirit marcó un nuevo giro en su estilo musical al producir una obra no tan agresiva y mucho más inclinada hacia el rock alternativo.<!--y fue una mierda :v--> </p>
+
+        <div class="citas">
+            <cite> 
+                Worms come out of the woodwork.
+                Leeches come from out of the dirt.
+                Rats come out of the holes they call home,
+                I fall apart.
+                And the snakes start to sing.
+                - And the snakes start to sing, Bring me the horizon
+            </cite>
+        </div>
+
+        <div class="busqueda">
+
+            <h3> <a href="https://open.spotify.com/artist/1Ffb6ejR6Fe5IamqA5oRUF?autoplay=true&v=A" class="spotif" target="_blank">escuchar <i class="fab fa-spotify"></i></a></h3>
+
+            <h3> <a href="../index.html" class="btnvolver" > Volver </a></h3>
+
+        </div>
+    </div>
+
+    <script>
+        let btnvolvers = document.querySelectorAll(".btnvolver")
+        let section2 = document.querySelector(".section2")
+    
+        btnvolvers.forEach(function(btnvolver){
+            btnvolver.addEventListener('click',function(ev){
+                ev.preventDefault();
+                section2.classList.remove("animated");
+                section2.classList.remove("slideInRight");
+                section2.classList.add("animated");
+                section2.classList.add("slideOutRight")
+                setTimeout(() => {
+                    location.href="../index.html";
+                }, 500);
+    
+            });
+        })
+    
+    </script>
+
+    <!-- ---------------------------------SIN FOOTER---------------------------------------------- -->
+    
+</body>
+
+</html>
